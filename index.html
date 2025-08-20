@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hi,Kanyaah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Hi, Kanyaah</h1>
+    <nav>
+      <ul>
+        <li><button class="nav-btn" data-target="home">Beranda</button></li>
+        <li><button class="nav-btn" data-target="features">Features</button></li>
+        <li><button class="nav-btn" data-target="gallery">Gallery</button></li>
+        <li><button class="nav-btn" data-target="music">Music</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+   <!-- Beranda -->
+<section id="home" class="section active">
+    <h2>Please, Reconnect With Me Soon.</h2>
+    <p>You and I are like two stars in the endless universe, aligned in a way that makes the night sky feel complete; every moment we share, no matter how simple, turns into something unforgettable.</p>
+    
+    <!-- Section for vibes and fun -->
+    <div class="vibes">
+        <h3>So Sorry Yaa</h3>
+        <p>The little things with you somehow turn into the best parts of my day. It’s like every moment naturally becomes a memory worth holding on to.</p>
+      </div>
+    
+    <!-- Section for love quotes -->
+    <div class="love-quotes">
+      <h3>Romantic Quotes, Because Why Not?</h3>
+      <p>"You’re not my kinda person. You’re the only person I can’t live without."</p>
+      <p>"You’re the key to my lock, the rhythm to my heartbeat."</p>
+    </div>
+  
+    <div class="button-container">
+        <button onclick="showLoveVibes()">Click for Love Vibes</button>
+        <div id="love-vibes-container" class="hidden-container">
+          <p id="random-quote"></p>
+        </div>
+      </div>
+</section>
+
+    <!-- Features -->
+    <section id="features" class="section hidden">
+      <div class="feature">
+              <h2>Features</h2>
+      <div class="feature">
+        <h3>Forgive Me Calculator</h3>
+        <input type="text" id="name1" placeholder="Nama Kamu">
+        <button onclick="calculateLove()">Hitung Maafinnya</button>
+        <p id="love-result" class="hidden"></p>
+      </div>
+      
+            <div class="feature">
+        <h3>Personalized Love Quotes</h3>
+        <button onclick="generateQuote()">Dapatkan Quotes</button>
+        <p id="quote-result"></p>
+      </div>
+
+      <div class="feature">
+        <h3>Daily Compliment Generator</h3>
+        <button onclick="generateCompliment()">Dapatkan Pujian</button>
+        <p id="compliment-result"></p>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+<section id="gallery" class="section hidden">
+    <h2>Gallery Kanyaah</h2>
+    <div class="gallery">
+            <div class="gallery-item">
+        <img src="images/lucu.jpg" alt="Gorgeous" onclick="showCaption(this)" />
+        <p class="caption">Gorgeous</p>
+        <div class="hidden-text">"You’re like a sunset, a beauty that makes everything stop for a while. I’m sorry if I couldn’t always be that gentle, and instead made mistakes. I truly mean it when I say sorry."</div>
+      </div>      
+      <div class="gallery-item">
+        <img src="images/kanyaah.jpg" alt="Prettiest" onclick="showCaption(this)" />
+        <p class="caption">Prettiest</p>
+        <div class="hidden-text">"Like Frank Ocean said, some feelings don’t need explanations being with you feels exactly like that."</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/sayang.jpg" alt="Charming" onclick="showCaption(this)" />
+        <p class="caption">Charming</p>
+        <div class="hidden-text">"Kalo perasaan bisa digambarin, kanyaah tuh udah jadi hasil paling indah yang nggak bisa ditandingi."</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/cinta.jpg" alt="Radiant" onclick="showCaption(this)" />
+        <p class="caption">Radiant</p>
+        <div class="hidden-text">"Sometimes feels like we’re standing at two different points, yet still looking at the same sky. The way we see it might not always match, but the purpose and the meaning we hold keep us aligned."</div>
+      </div>      
+      <div class="gallery-item">
+        <img src="images/love.jpg" alt="Cute" onclick="showCaption(this)" />
+        <p class="caption">Cute</p>
+        <div class="hidden-text">"Ada sesuatu dari lu yang bikin semuanya kerasa lebih ringan, walau lagi ribet sekalipun kanyaah."</div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Music -->
+    <section id="music" class="section hidden">
+      <h2>Music</h2>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3bTEFJgLKUSnLbWFbhAXVy?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with Gamakaél</p>
+  </footer>
+</body>
+</html>
