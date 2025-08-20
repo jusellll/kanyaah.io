@@ -31,7 +31,3 @@ Setiap commit di repo ini adalah cerita, dan setiap bug yang muncul… yah, mung
 🌸 **Penutup**
 README ini bukan cuma dokumentasi. Ini adalah surat cinta kecil dalam bentuk markdown.
 Karena pada akhirnya, apa gunanya program yang berjalan, kalau hatimu berhenti? 💕
-
----
-
-Mau aku bikin versi yang lebih **formal + romantis tipis** (biar tetap terlihat profesional kalau dibuka orang lain), atau versi ini sudah cocok jadi R
